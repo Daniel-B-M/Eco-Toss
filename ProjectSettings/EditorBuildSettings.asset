@@ -6,6 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/EcoToss/Scenes/MainMenu.unity
+    guid: bb05320d92ab54b74a7026496c9a3308
+  - enabled: 1
+    path: Assets/EcoToss/Scenes/Gameplay.unity
+    guid: dc65205732e544e77b16dd65fa91a779
+  - enabled: 1
+    path: Assets/EcoToss/Scenes/Gameplay 2.unity
+    guid: d4606dd0b3b2a4d65b20ac572578fd56
+  - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
   m_configObjects:

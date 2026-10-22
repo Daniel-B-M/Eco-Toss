@@ -21,18 +21,20 @@ El proyecto incluye Universal Render Pipeline (URP) y el paquete Input System. U
 5. Abre `Assets/EcoToss/Scenes/MainMenu.unity` o `Assets/EcoToss/Scenes/Gameplay.unity`.
 6. Presiona **Play** para revisar la escena en el editor.
 
-Las escenas están creadas como base inicial. El flujo entre el menú y la partida y la interacción jugable están pendientes de implementación.
+MainMenu incluye una interfaz provisional editable en la jerarquía: título, Jugar, Cómo jugar y Salir. Jugar abre Gameplay; Cómo jugar muestra los controles y permite volver con el botón Volver o Escape. Salir detiene Play en el editor o cierra la aplicación compilada. MainMenu es la primera escena de la compilación.
+
+La interfaz usa uGUI, un Canvas escalado a una referencia de 1280 × 900 y colores planos, sin recursos gráficos externos. Los textos, colores y tamaños se pueden ajustar desde el Inspector; `MainMenuController` conecta las acciones y crea el EventSystem con Input System al iniciar. El diseño base está pensado para pantallas horizontales.
 
 ## Controles
 
-Los controles todavía no están definidos ni implementados. Esta tabla se actualizará con las asignaciones reales del juego.
+Controles del prototipo actual:
 
 | Acción prevista | Control | Estado |
 | --- | --- | --- |
-| Apuntar el lanzamiento | Por definir | Pendiente |
-| Lanzar el residuo | Por definir | Pendiente |
+| Apuntar el lanzamiento | Mover el mouse | Implementado |
+| Lanzar el residuo | Mantener clic izquierdo para cargar; soltar para lanzar | Implementado; lanzamiento automático a los 5 segundos |
 | Pausar o reanudar | Por definir | Pendiente |
-| Interactuar con los menús | Por definir | Pendiente |
+| Interactuar con los menús | Clic o flechas y Enter; Escape cierra las instrucciones | Implementado |
 
 ## Estructura del proyecto
 
@@ -63,7 +65,7 @@ La documentación adicional se organizará en `Docs/` cuando se agreguen los doc
 
 ## Próximos pasos
 
-- Implementar el flujo entre el menú principal y la partida.
+- Añadir el regreso desde la partida al menú principal.
 - Crear la mecánica básica de lanzamiento.
 - Definir los tipos de residuos y las reglas de clasificación.
 - Incorporar puntaje y mensajes de resultado.
