@@ -3,6 +3,7 @@ using UnityEngine.InputSystem;
 
 public class WasteThrower : MonoBehaviour
 {
+    [SerializeField] private Font uiFont;
     [SerializeField] private Rigidbody wasteBody;
     [SerializeField] private Transform throwOrigin;
 
@@ -71,6 +72,7 @@ public class WasteThrower : MonoBehaviour
     private void OnGUI()
     {
         GUIStyle style = new GUIStyle(GUI.skin.box);
+        style.font = uiFont;
         style.fontSize = 28;
         style.alignment = TextAnchor.MiddleCenter;
         style.normal.textColor = Color.white;

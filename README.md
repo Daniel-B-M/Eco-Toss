@@ -23,7 +23,7 @@ El proyecto incluye Universal Render Pipeline (URP) y el paquete Input System. U
 
 MainMenu incluye una interfaz provisional editable en la jerarquía: título, Jugar, Cómo jugar y Salir. Jugar abre Gameplay; Cómo jugar muestra los controles y permite volver con el botón Volver o Escape. Salir detiene Play en el editor o cierra la aplicación compilada. MainMenu es la primera escena de la compilación.
 
-La interfaz usa uGUI, un Canvas escalado a una referencia de 1280 × 900 y colores planos, sin recursos gráficos externos. Los textos, colores y tamaños se pueden ajustar desde el Inspector; `MainMenuController` conecta las acciones y crea el EventSystem con Input System al iniciar. El diseño base está pensado para pantallas horizontales.
+MainMenu y Gameplay usan uGUI para los controles y TextMesh Pro para todos los textos, con la fuente Nunito. La escena Gameplay 2 es una prueba aparte. El menú usa un Canvas escalado a una referencia de 1280 × 900 y colores planos, sin recursos gráficos externos. Los textos, colores y tamaños se pueden ajustar desde el Inspector; `MainMenuController` conecta las acciones y crea el EventSystem con Input System al iniciar. El diseño base está pensado para pantallas horizontales.
 
 ## Controles
 

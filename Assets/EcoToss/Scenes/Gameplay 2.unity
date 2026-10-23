@@ -677,6 +677,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d58f020d55904aad80eb20c51a80f22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WasteThrower
+  uiFont: {fileID: 12800000, guid: f36bc5dbde8843d28f12399aade62adc, type: 3}
   wasteBody: {fileID: 1701485252}
   throwOrigin: {fileID: 2113530255}
   minSpeed: 5

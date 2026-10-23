@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
@@ -13,7 +14,7 @@ public class MainMenuController : MonoBehaviour
     [SerializeField] private Button backButton;
     [SerializeField] private GameObject menuPanel;
     [SerializeField] private GameObject helpPanel;
-    [SerializeField] private Text statusText;
+    [SerializeField] private TMP_Text statusText;
     [SerializeField] private string gameplayScene = "Gameplay";
 
     private void Awake()
