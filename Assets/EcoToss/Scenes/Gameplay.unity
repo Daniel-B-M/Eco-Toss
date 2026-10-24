@@ -6339,7 +6339,7 @@ Transform:
   m_GameObject: {fileID: 1606435580}
   serializedVersion: 2
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalPosition: {x: -15, y: 28, z: 26}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7760,7 +7760,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3000000001
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11300,7 +11300,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "¡Objetivo cumplido!"
+  m_text: "\xA1Objetivo cumplido!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 82bb0ba2bd1334a04b99439d828df419, type: 2}
   m_sharedMaterial: {fileID: 7565357924602390207, guid: 82bb0ba2bd1334a04b99439d828df419, type: 2}
@@ -11437,7 +11437,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Tu ayuda hizo la diferencia en el parque."
+  m_text: Tu ayuda hizo la diferencia en el parque.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 82bb0ba2bd1334a04b99439d828df419, type: 2}
   m_sharedMaterial: {fileID: 7565357924602390207, guid: 82bb0ba2bd1334a04b99439d828df419, type: 2}
@@ -11574,7 +11574,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Karma final: 100 / 100"
+  m_text: 'Karma final: 100 / 100'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 82bb0ba2bd1334a04b99439d828df419, type: 2}
   m_sharedMaterial: {fileID: 7565357924602390207, guid: 82bb0ba2bd1334a04b99439d828df419, type: 2}
@@ -11711,7 +11711,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Aciertos: 0"
+  m_text: 'Aciertos: 0'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 82bb0ba2bd1334a04b99439d828df419, type: 2}
   m_sharedMaterial: {fileID: 7565357924602390207, guid: 82bb0ba2bd1334a04b99439d828df419, type: 2}
@@ -11848,7 +11848,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Mejor racha: 0"
+  m_text: 'Mejor racha: 0'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 82bb0ba2bd1334a04b99439d828df419, type: 2}
   m_sharedMaterial: {fileID: 7565357924602390207, guid: 82bb0ba2bd1334a04b99439d828df419, type: 2}
@@ -12106,7 +12106,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Volver a jugar"
+  m_text: Volver a jugar
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 82bb0ba2bd1334a04b99439d828df419, type: 2}
   m_sharedMaterial: {fileID: 7565357924602390207, guid: 82bb0ba2bd1334a04b99439d828df419, type: 2}
@@ -12282,7 +12282,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.27, g: 0.30, b: 0.35, a: 1}
+  m_Color: {r: 0.27, g: 0.3, b: 0.35, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -12364,7 +12364,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Menú principal"
+  m_text: "Men\xFA principal"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 82bb0ba2bd1334a04b99439d828df419, type: 2}
   m_sharedMaterial: {fileID: 7565357924602390207, guid: 82bb0ba2bd1334a04b99439d828df419, type: 2}
@@ -12583,7 +12583,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "¡Intentémoslo de nuevo!"
+  m_text: "\xA1Intent\xE9moslo de nuevo!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 82bb0ba2bd1334a04b99439d828df419, type: 2}
   m_sharedMaterial: {fileID: 7565357924602390207, guid: 82bb0ba2bd1334a04b99439d828df419, type: 2}
@@ -12720,7 +12720,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Cada intento es una oportunidad para aprender."
+  m_text: Cada intento es una oportunidad para aprender.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 82bb0ba2bd1334a04b99439d828df419, type: 2}
   m_sharedMaterial: {fileID: 7565357924602390207, guid: 82bb0ba2bd1334a04b99439d828df419, type: 2}
@@ -12857,7 +12857,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Karma final: 0 / 100"
+  m_text: 'Karma final: 0 / 100'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 82bb0ba2bd1334a04b99439d828df419, type: 2}
   m_sharedMaterial: {fileID: 7565357924602390207, guid: 82bb0ba2bd1334a04b99439d828df419, type: 2}
@@ -12994,7 +12994,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Aciertos: 0"
+  m_text: 'Aciertos: 0'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 82bb0ba2bd1334a04b99439d828df419, type: 2}
   m_sharedMaterial: {fileID: 7565357924602390207, guid: 82bb0ba2bd1334a04b99439d828df419, type: 2}
@@ -13131,7 +13131,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Mejor racha: 0"
+  m_text: 'Mejor racha: 0'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 82bb0ba2bd1334a04b99439d828df419, type: 2}
   m_sharedMaterial: {fileID: 7565357924602390207, guid: 82bb0ba2bd1334a04b99439d828df419, type: 2}
@@ -13389,7 +13389,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Volver a intentar"
+  m_text: Volver a intentar
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 82bb0ba2bd1334a04b99439d828df419, type: 2}
   m_sharedMaterial: {fileID: 7565357924602390207, guid: 82bb0ba2bd1334a04b99439d828df419, type: 2}
@@ -13565,7 +13565,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.27, g: 0.30, b: 0.35, a: 1}
+  m_Color: {r: 0.27, g: 0.3, b: 0.35, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -13647,7 +13647,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Menú principal"
+  m_text: "Men\xFA principal"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 82bb0ba2bd1334a04b99439d828df419, type: 2}
   m_sharedMaterial: {fileID: 7565357924602390207, guid: 82bb0ba2bd1334a04b99439d828df419, type: 2}
@@ -13744,7 +13744,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &3200000001
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13942,7 +13942,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "¡Cada residuo en su lugar!"
+  m_text: "\xA1Cada residuo en su lugar!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 82bb0ba2bd1334a04b99439d828df419, type: 2}
   m_sharedMaterial: {fileID: 7565357924602390207, guid: 82bb0ba2bd1334a04b99439d828df419, type: 2}
@@ -14079,7 +14079,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Observa las canecas y recuerda qué residuos van en cada una."
+  m_text: "Observa las canecas y recuerda qu\xE9 residuos van en cada una."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 82bb0ba2bd1334a04b99439d828df419, type: 2}
   m_sharedMaterial: {fileID: 7565357924602390207, guid: 82bb0ba2bd1334a04b99439d828df419, type: 2}
@@ -14365,7 +14365,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.37, g: 0.40, b: 0.47, a: 1}
+  m_Color: {r: 0.37, g: 0.4, b: 0.47, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -14447,7 +14447,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "?"
+  m_text: '?'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 82bb0ba2bd1334a04b99439d828df419, type: 2}
   m_sharedMaterial: {fileID: 7565357924602390207, guid: 82bb0ba2bd1334a04b99439d828df419, type: 2}
@@ -14584,7 +14584,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "BLANCA"
+  m_text: BLANCA
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 82bb0ba2bd1334a04b99439d828df419, type: 2}
   m_sharedMaterial: {fileID: 7565357924602390207, guid: 82bb0ba2bd1334a04b99439d828df419, type: 2}
@@ -14721,7 +14721,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Aprovechables"
+  m_text: Aprovechables
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 82bb0ba2bd1334a04b99439d828df419, type: 2}
   m_sharedMaterial: {fileID: 7565357924602390207, guid: 82bb0ba2bd1334a04b99439d828df419, type: 2}
@@ -14858,9 +14858,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Plástico, vidrio, metales,
-papel y cartón.
-Limpios y secos."
+  m_text: "Pl\xE1stico, vidrio, metales, papel y cart\xF3n. Limpios y secos."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 82bb0ba2bd1334a04b99439d828df419, type: 2}
   m_sharedMaterial: {fileID: 7565357924602390207, guid: 82bb0ba2bd1334a04b99439d828df419, type: 2}
@@ -15070,7 +15068,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.18, g: 0.60, b: 0.29, a: 1}
+  m_Color: {r: 0.18, g: 0.6, b: 0.29, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -15146,7 +15144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.37, g: 0.40, b: 0.47, a: 1}
+  m_Color: {r: 0.37, g: 0.4, b: 0.47, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -15228,7 +15226,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "?"
+  m_text: '?'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 82bb0ba2bd1334a04b99439d828df419, type: 2}
   m_sharedMaterial: {fileID: 7565357924602390207, guid: 82bb0ba2bd1334a04b99439d828df419, type: 2}
@@ -15365,7 +15363,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "VERDE"
+  m_text: VERDE
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 82bb0ba2bd1334a04b99439d828df419, type: 2}
   m_sharedMaterial: {fileID: 7565357924602390207, guid: 82bb0ba2bd1334a04b99439d828df419, type: 2}
@@ -15502,7 +15500,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Orgánicos aprovechables"
+  m_text: "Org\xE1nicos aprovechables"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 82bb0ba2bd1334a04b99439d828df419, type: 2}
   m_sharedMaterial: {fileID: 7565357924602390207, guid: 82bb0ba2bd1334a04b99439d828df419, type: 2}
@@ -15639,8 +15637,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Restos de frutas,
-verduras y comida."
+  m_text: Restos de frutas, verduras y comida.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 82bb0ba2bd1334a04b99439d828df419, type: 2}
   m_sharedMaterial: {fileID: 7565357924602390207, guid: 82bb0ba2bd1334a04b99439d828df419, type: 2}
@@ -15926,7 +15923,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.37, g: 0.40, b: 0.47, a: 1}
+  m_Color: {r: 0.37, g: 0.4, b: 0.47, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -16008,7 +16005,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "?"
+  m_text: '?'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 82bb0ba2bd1334a04b99439d828df419, type: 2}
   m_sharedMaterial: {fileID: 7565357924602390207, guid: 82bb0ba2bd1334a04b99439d828df419, type: 2}
@@ -16145,7 +16142,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "NEGRA"
+  m_text: NEGRA
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 82bb0ba2bd1334a04b99439d828df419, type: 2}
   m_sharedMaterial: {fileID: 7565357924602390207, guid: 82bb0ba2bd1334a04b99439d828df419, type: 2}
@@ -16282,7 +16279,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "No aprovechables"
+  m_text: No aprovechables
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 82bb0ba2bd1334a04b99439d828df419, type: 2}
   m_sharedMaterial: {fileID: 7565357924602390207, guid: 82bb0ba2bd1334a04b99439d828df419, type: 2}
@@ -16419,9 +16416,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Servilletas usadas,
-papel higiénico y residuos
-contaminados."
+  m_text: Servilletas usadas, empaques sucios de comida y residuos contaminados.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 82bb0ba2bd1334a04b99439d828df419, type: 2}
   m_sharedMaterial: {fileID: 7565357924602390207, guid: 82bb0ba2bd1334a04b99439d828df419, type: 2}
@@ -16558,7 +16553,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Recuerda los colores. ¡El primer lanzamiento comienza al continuar!"
+  m_text: "Recuerda los colores. \xA1El primer lanzamiento comienza al continuar!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 82bb0ba2bd1334a04b99439d828df419, type: 2}
   m_sharedMaterial: {fileID: 7565357924602390207, guid: 82bb0ba2bd1334a04b99439d828df419, type: 2}
@@ -16816,7 +16811,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "¡Entendido, comenzar!"
+  m_text: "\xA1Entendido, comenzar!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 82bb0ba2bd1334a04b99439d828df419, type: 2}
   m_sharedMaterial: {fileID: 7565357924602390207, guid: 82bb0ba2bd1334a04b99439d828df419, type: 2}
