@@ -1,16 +1,15 @@
-# Eco-Toss: Civic Memory
-
+# Eco-Toss
+ 
 Educational Unity game about sorting waste: the player throws everyday waste into the correct bin (white, green or black) while the neighborhood reacts to each choice.
-
+ 
 > **Current status: asset integration.** The `integration` branch brings together the team's 2D, 3D, audio and font assets.
-
+ 
 ## Tech
 - **Unity 6000.3.16f1**, Universal Render Pipeline (URP 17.3)
 - Input System 1.19, uGUI + TextMesh Pro
 - Scenes: `MainMenu` (build start scene), `Gameplay`, `Gameplay 2` (test scene)
-
 ## Integrated assets
-
+ 
 **3D** (`Art/Models`, low-poly)
 - Bin model (`trash-can.fbx`) with white, green and black materials
 - 15 waste models, 5 per bin:
@@ -37,8 +36,8 @@ Educational Unity game about sorting waste: the player throws everyday waste int
 ## How to open
 1. Clone the repository and switch to the `integration` branch.
 2. Add the project folder in Unity Hub and open it with Unity 6000.3.16f1.
-3. Open `Assets/EcoToss/Scenes/MainMenu.unity` and press **Play**.
+3. Open `Assets/EcoToss/Scenes/MainMenu.unity`.
 
 ## Team
-Daniel Bonilla Martínez · Jason Kim Rincon · Andrés Valbuena Almeida · Juliana Albarracin Casallas
+Daniel Bonilla Martínez · Jason Kim Rincon · Andrés Valbuena Almeida
 UNAD — Programación para Videojuegos (213027), Group 08
