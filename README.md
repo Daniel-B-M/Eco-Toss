@@ -1,72 +1,44 @@
-# Eco Toss
+# Eco-Toss: Civic Memory
 
-Eco Toss es un proyecto de videojuego educativo desarrollado en Unity. Su propuesta es practicar la separación de residuos mediante una mecánica de lanzamiento hacia la caneca correspondiente.
+Educational Unity game about sorting waste: the player throws everyday waste into the correct bin (white, green or black) while the neighborhood reacts to each choice.
 
-**Estado:** configuración inicial del proyecto. Las mecánicas, reglas y controles se documentarán a medida que se implementen.
+> **Current status: asset integration.** The `integration` branch brings together the team's 2D, 3D, audio and font assets.
 
-## Requisitos
+## Tech
+- **Unity 6000.3.16f1**, Universal Render Pipeline (URP 17.3)
+- Input System 1.19, uGUI + TextMesh Pro
+- Scenes: `MainMenu` (build start scene), `Gameplay`, `Gameplay 2` (test scene)
 
-- Unity Hub.
-- **Unity Editor 6000.3.16f1**, versión registrada en `ProjectSettings/ProjectVersion.txt`.
-- Git, si vas a clonar el repositorio.
+## Integrated assets
 
-El proyecto incluye Universal Render Pipeline (URP) y el paquete Input System. Unity resolverá las dependencias declaradas en `Packages/manifest.json` al abrirlo.
+**3D** (`Art/Models`, low-poly)
+- Bin model (`trash-can.fbx`) with white, green and black materials
+- 15 waste models, 5 per bin:
+  - **White (recyclable):** water bottle, soda can, beer bottle, cardboard box, crumpled paper
+  - **Green (organic):** apple, banana, orange, eggs, hot dog
+  - **Black (non-recyclable):** pizza box, coffee cup, egg carton, cigarettes, broken glass
+- Environment: *SimplePoly City – Low Poly Assets* (third party, in `ThirdParty/`)
 
-## Cómo abrir y ejecutar el proyecto
+**2D** (`Art/Sprites`)
+- Main title and background
+- Character feedback sprites (idle, happy and sad states):
+  - Don Jacinto (the waste picker)
+  - The young couple
+  - The community dog
 
-1. Clona este repositorio o descarga una copia en tu equipo.
-2. Abre Unity Hub y agrega la carpeta raíz del proyecto: la que contiene `Assets`, `Packages` y `ProjectSettings`.
-3. Abre el proyecto con Unity **6000.3.16f1**.
-4. Espera a que Unity importe los recursos y resuelva los paquetes.
-5. Abre `Assets/EcoToss/Scenes/MainMenu.unity` o `Assets/EcoToss/Scenes/Gameplay.unity`.
-6. Presiona **Play** para revisar la escena en el editor.
+**Audio** (`Audio/`)
+- Music: `bg-music.mp3`
+- SFX: success, fail, victory, lose, UI hover and UI select
 
-MainMenu incluye una interfaz provisional editable en la jerarquía: título, Jugar, Cómo jugar y Salir. Jugar abre Gameplay; Cómo jugar muestra los controles y permite volver con el botón Volver o Escape. Salir detiene Play en el editor o cierra la aplicación compilada. MainMenu es la primera escena de la compilación.
+**Font** (`UI/Fonts`)
+- **Nunito** Regular and ExtraBold, with TMP SDF assets (supports accents and ñ)
+- Source: Google Fonts, licensed under the SIL Open Font License 1.1
 
-MainMenu y Gameplay usan uGUI para los controles y TextMesh Pro para todos los textos, con la fuente Nunito. La escena Gameplay 2 es una prueba aparte. El menú usa un Canvas escalado a una referencia de 1280 × 900 y colores planos, sin recursos gráficos externos. Los textos, colores y tamaños se pueden ajustar desde el Inspector; `MainMenuController` conecta las acciones y crea el EventSystem con Input System al iniciar. El diseño base está pensado para pantallas horizontales.
+## How to open
+1. Clone the repository and switch to the `integration` branch.
+2. Add the project folder in Unity Hub and open it with Unity 6000.3.16f1.
+3. Open `Assets/EcoToss/Scenes/MainMenu.unity` and press **Play**.
 
-## Controles
-
-Controles del prototipo actual:
-
-| Acción prevista | Control | Estado |
-| --- | --- | --- |
-| Apuntar el lanzamiento | Mover el mouse | Implementado |
-| Lanzar el residuo | Mantener clic izquierdo para cargar; soltar para lanzar | Implementado; lanzamiento automático a los 5 segundos |
-| Pausar o reanudar | Por definir | Pendiente |
-| Interactuar con los menús | Clic o flechas y Enter; Escape cierra las instrucciones | Implementado |
-
-## Estructura del proyecto
-
-```text
-Assets/EcoToss/
-├── Scenes/           # MainMenu y Gameplay
-├── Scripts/
-│   ├── Core/         # Inicio y control de la partida
-│   ├── Gameplay/     # Lanzamiento, residuos y canecas
-│   ├── Input/        # Controles del jugador
-│   ├── UI/           # Menús, puntaje y mensajes
-│   └── Audio/        # Control de música y efectos
-├── Prefabs/          # Residuos, canecas, entorno e interfaz
-├── Art/              # Modelos, materiales, texturas, sprites y animaciones
-├── Audio/            # Música y efectos de sonido
-└── UI/               # Fuentes y recursos gráficos de interfaz
-```
-
-La documentación adicional se organizará en `Docs/` cuando se agreguen los documentos de planificación, diseño y notas técnicas.
-
-## Convenciones de trabajo
-
-- Guarda los recursos propios del juego en `Assets/EcoToss/`.
-- Usa nombres claros y consistentes, como `WasteThrower.cs` o `BinPlastic.prefab`.
-- Mueve y renombra recursos desde la ventana **Project** de Unity para conservar sus referencias.
-- Incluye los archivos `.meta` al guardar cambios en Git.
-- Mantén este README actualizado cuando cambien la versión de Unity, las instrucciones o los controles.
-
-## Próximos pasos
-
-- Añadir el regreso desde la partida al menú principal.
-- Crear la mecánica básica de lanzamiento.
-- Definir los tipos de residuos y las reglas de clasificación.
-- Incorporar puntaje y mensajes de resultado.
-- Definir e implementar los controles y documentarlos aquí.
+## Team
+Daniel Bonilla Martínez · Jason Kim Rincon · Andrés Valbuena Almeida · Juliana Albarracin Casallas
+UNAD — Programación para Videojuegos (213027), Group 08
