@@ -2,7 +2,7 @@
  
 Educational Unity game about sorting waste: the player throws everyday waste into the correct bin (white, green or black) while the neighborhood reacts to each choice.
  
-> **Current status: asset integration.** The `integration` branch brings together the team's 2D, 3D, audio and font assets.
+> **Current status: asset integration.** The `main` branch brings together the team's 2D, 3D, audio and font assets.
  
 ## Tech
 - **Unity 6000.3.16f1**, Universal Render Pipeline (URP 17.3)
