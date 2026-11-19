@@ -38,7 +38,12 @@ namespace EcoToss.Core
         private void Start()
         {
             // Start (not Awake) so every listener has already subscribed in its OnEnable.
-            ApplyState(GameState.Playing);
+            // The briefing only appears in the first match of the session.
+            GameState initialState = GameSession.HasSeenBriefing
+                ? GameState.Playing
+                : GameState.Briefing;
+
+            ApplyState(initialState);
         }
 
         /// <summary>Changes the match state. Ignores the call if the state is the same.</summary>
@@ -52,6 +57,9 @@ namespace EcoToss.Core
 
         private void ApplyState(GameState newState)
         {
+            if (CurrentState == GameState.Briefing && newState != GameState.Briefing)
+                GameSession.MarkBriefingAsSeen();
+
             CurrentState = newState;
             Time.timeScale = newState == GameState.Paused ? 0f : 1f;
             GameEvents.RaiseGameStateChanged(newState);

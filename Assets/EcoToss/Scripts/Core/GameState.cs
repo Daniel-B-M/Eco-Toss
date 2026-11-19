@@ -5,6 +5,9 @@ namespace EcoToss.Core
     /// </summary>
     public enum GameState
     {
+        /// <summary>The rules are explained before the first match of the session.</summary>
+        Briefing,
+
         /// <summary>The player is aiming and throwing waste.</summary>
         Playing,
 
