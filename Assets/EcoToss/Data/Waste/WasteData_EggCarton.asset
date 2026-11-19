@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 552be3c97419e46bcb7b3c1938e6d66f, type: 3}
+  m_Name: WasteData_EggCarton
+  m_EditorClassIdentifier: Assembly-CSharp::EcoToss.Core.WasteData
+  displayName: Cubeta de huevos sucia
+  hint: "Cart\xF3n sucio o h\xFAmedo va a la negra."
+  correctBin: 2
+  prefab: {fileID: 4400904507949267630, guid: 0b13f3681a09c417886826eac61e34ca, type: 3}

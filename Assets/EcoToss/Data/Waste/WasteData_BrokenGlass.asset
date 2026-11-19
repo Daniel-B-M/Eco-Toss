@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 552be3c97419e46bcb7b3c1938e6d66f, type: 3}
+  m_Name: WasteData_BrokenGlass
+  m_EditorClassIdentifier: Assembly-CSharp::EcoToss.Core.WasteData
+  displayName: Vidrio roto
+  hint: 'Vidrio roto: peligroso para los recicladores.'
+  correctBin: 2
+  prefab: {fileID: 2706685475158293957, guid: dc46a4bfc42074a64aaa65c8c60c6948, type: 3}

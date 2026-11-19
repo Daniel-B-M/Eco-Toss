@@ -16,10 +16,6 @@ namespace EcoToss.Core
         [Header("Clasificación")]
         [SerializeField] private BinType correctBin;
 
-        [Header("Física")]
-        [SerializeField, Min(0.01f)] private float mass = 1f;
-        [SerializeField] private bool isAffectedByWind;
-
         [Header("Visual")]
         [SerializeField] private GameObject prefab;
 
@@ -27,8 +23,6 @@ namespace EcoToss.Core
         public string DisplayName => displayName;
         public string Hint => hint;
         public BinType CorrectBin => correctBin;
-        public float Mass => mass;
-        public bool IsAffectedByWind => isAffectedByWind;
         public GameObject Prefab => prefab;
     }
 }
