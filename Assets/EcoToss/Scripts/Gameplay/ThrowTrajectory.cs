@@ -1,44 +1,46 @@
 using UnityEngine;
 
-[RequireComponent(typeof(LineRenderer))]
-public class ThrowTrajectory : MonoBehaviour
+namespace EcoToss.Gameplay
 {
-    [SerializeField] private WasteThrower wasteThrower;
-    [SerializeField] private Transform throwOrigin;
-
-    [SerializeField, Min(2)] private int pointCount = 60;
-    [SerializeField, Min(0.1f)] private float previewDuration = 3f;
-
-    private LineRenderer trajectoryLine;
-
-    private void Awake()
+    [RequireComponent(typeof(LineRenderer))]
+    public class ThrowTrajectory : MonoBehaviour
     {
-        trajectoryLine = GetComponent<LineRenderer>();
-        trajectoryLine.useWorldSpace = true;
-    }
+        [SerializeField] private WasteThrower wasteThrower;
 
-    private void LateUpdate()
-    {
-        trajectoryLine.enabled = !wasteThrower.HasLaunched;
+        [SerializeField, Min(2)] private int pointCount = 60;
+        [SerializeField, Min(0.1f)] private float previewDuration = 3f;
 
-        if (wasteThrower.HasLaunched)
-            return;
+        private LineRenderer trajectoryLine;
 
-        trajectoryLine.positionCount = pointCount;
-
-        Vector3 startPosition = throwOrigin.position;
-        Vector3 initialVelocity = wasteThrower.LaunchVelocity;
-
-        for (int i = 0; i < pointCount; i++)
+        private void Awake()
         {
-            float time = i * previewDuration / (pointCount - 1);
+            trajectoryLine = GetComponent<LineRenderer>();
+            trajectoryLine.useWorldSpace = true;
+        }
 
-            Vector3 position =
-                startPosition
-                + initialVelocity * time
-                + 0.5f * Physics.gravity * time * time;
+        private void LateUpdate()
+        {
+            trajectoryLine.enabled = !wasteThrower.HasLaunched;
 
-            trajectoryLine.SetPosition(i, position);
+            if (wasteThrower.HasLaunched)
+                return;
+
+            trajectoryLine.positionCount = pointCount;
+
+            Vector3 startPosition = wasteThrower.LaunchStartPosition;
+            Vector3 initialVelocity = wasteThrower.LaunchVelocity;
+
+            for (int pointIndex = 0; pointIndex < pointCount; pointIndex++)
+            {
+                float time = pointIndex * previewDuration / (pointCount - 1);
+
+                Vector3 position =
+                    startPosition
+                    + initialVelocity * time
+                    + 0.5f * Physics.gravity * time * time;
+
+                trajectoryLine.SetPosition(pointIndex, position);
+            }
         }
     }
 }

@@ -1,0 +1,33 @@
+using UnityEngine;
+
+namespace EcoToss.Core
+{
+    /// <summary>
+    /// Datos de un tipo de residuo. Cada residuo del juego es un asset de este tipo
+    /// y todas sus copias en escena comparten los mismos datos.
+    /// </summary>
+    [CreateAssetMenu(fileName = "WasteData_", menuName = "EcoToss/Waste Data")]
+    public class WasteData : ScriptableObject
+    {
+        [Header("Identidad")]
+        [SerializeField] private string displayName;
+        [SerializeField, TextArea(2, 4)] private string hint;
+
+        [Header("Clasificación")]
+        [SerializeField] private BinType correctBin;
+
+        [Header("Física")]
+        [SerializeField, Min(0.01f)] private float mass = 1f;
+        [SerializeField] private bool isAffectedByWind;
+
+        [Header("Visual")]
+        [SerializeField] private GameObject prefab;
+
+        public string DisplayName => displayName;
+        public string Hint => hint;
+        public BinType CorrectBin => correctBin;
+        public float Mass => mass;
+        public bool IsAffectedByWind => isAffectedByWind;
+        public GameObject Prefab => prefab;
+    }
+}

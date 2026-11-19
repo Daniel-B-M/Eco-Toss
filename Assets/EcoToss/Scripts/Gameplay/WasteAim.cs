@@ -1,35 +1,47 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class WasteAim : MonoBehaviour
+namespace EcoToss.Gameplay
 {
-    [SerializeField] private float sensitivity = 0.1f;
-    [SerializeField] private float horizontalLimit = 45f;
-    [SerializeField] private float minElevation = 10f;
-    [SerializeField] private float maxElevation = 70f;
-
-    private float horizontalAngle;
-    private float verticalAngle = 35f;
-
-    private void Update()
+    public class WasteAim : MonoBehaviour
     {
-        if (Mouse.current == null)
-            return;
+        [Header("Control del mouse")]
+        [SerializeField] private float mouseSensitivity = 0.1f;
 
-        Vector2 mouseDelta = Mouse.current.delta.ReadValue();
+        [Header("Límites de apuntado (grados)")]
+        [SerializeField] private float maxHorizontalAngle = 45f;
+        [SerializeField] private float minVerticalAngle = 10f;
+        [SerializeField] private float maxVerticalAngle = 70f;
+        [SerializeField] private float initialVerticalAngle = 35f;
 
-        horizontalAngle += mouseDelta.x * sensitivity;
-        verticalAngle += mouseDelta.y * sensitivity;
+        private float horizontalAngle;
+        private float verticalAngle;
 
-        horizontalAngle = Mathf.Clamp(horizontalAngle, -horizontalLimit, horizontalLimit);
-        verticalAngle = Mathf.Clamp(verticalAngle, minElevation, maxElevation);
+        private void Awake()
+        {
+            verticalAngle = initialVerticalAngle;
+        }
 
-        transform.localRotation = Quaternion.Euler(-verticalAngle, horizontalAngle, 0f);
-    }
+        private void Update()
+        {
+            if (Mouse.current == null)
+                return;
 
-    private void OnDrawGizmos()
-    {
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawRay(transform.position, transform.forward * 3f);
+            Vector2 mouseDelta = Mouse.current.delta.ReadValue();
+
+            horizontalAngle += mouseDelta.x * mouseSensitivity;
+            verticalAngle += mouseDelta.y * mouseSensitivity;
+
+            horizontalAngle = Mathf.Clamp(horizontalAngle, -maxHorizontalAngle, maxHorizontalAngle);
+            verticalAngle = Mathf.Clamp(verticalAngle, minVerticalAngle, maxVerticalAngle);
+
+            transform.localRotation = Quaternion.Euler(-verticalAngle, horizontalAngle, 0f);
+        }
+
+        private void OnDrawGizmos()
+        {
+            Gizmos.color = Color.yellow;
+            Gizmos.DrawRay(transform.position, transform.forward * 3f);
+        }
     }
 }
