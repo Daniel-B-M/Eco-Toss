@@ -36,6 +36,11 @@ namespace EcoToss.Core
         public static event Action<int> KarmaChanged;
         #endregion
 
+        #region Match Events
+        /// <summary>Invoked when the match state changes (playing, paused, victory or defeat).</summary>
+        public static event Action<GameState> GameStateChanged;
+        #endregion
+
         #region Event Invocators
         public static void RaiseWasteSpawned(WasteData wasteData) => WasteSpawned?.Invoke(wasteData);
         public static void RaiseWasteThrown(WasteData wasteData) => WasteThrown?.Invoke(wasteData);
@@ -44,6 +49,7 @@ namespace EcoToss.Core
         public static void RaiseWasteMissed(WasteData wasteData) => WasteMissed?.Invoke(wasteData);
         public static void RaiseCorrectStreakReached(int streakCount) => CorrectStreakReached?.Invoke(streakCount);
         public static void RaiseKarmaChanged(int karmaPercent) => KarmaChanged?.Invoke(karmaPercent);
+        public static void RaiseGameStateChanged(GameState newState) => GameStateChanged?.Invoke(newState);
         #endregion
 
         #region Lifecycle Reset
@@ -61,6 +67,7 @@ namespace EcoToss.Core
             WasteMissed = null;
             CorrectStreakReached = null;
             KarmaChanged = null;
+            GameStateChanged = null;
         }
         #endregion
     }
