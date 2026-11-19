@@ -3,8 +3,8 @@ using UnityEngine;
 namespace EcoToss.Core
 {
     /// <summary>
-    /// Datos de un tipo de residuo. Cada residuo del juego es un asset de este tipo
-    /// y todas sus copias en escena comparten los mismos datos.
+    /// ScriptableObject defining item data for a specific waste type,
+    /// shared by all corresponding item instances in the scene.
     /// </summary>
     [CreateAssetMenu(fileName = "WasteData_", menuName = "EcoToss/Waste Data")]
     public class WasteData : ScriptableObject
@@ -23,6 +23,7 @@ namespace EcoToss.Core
         [Header("Visual")]
         [SerializeField] private GameObject prefab;
 
+        // Public read-only accessors
         public string DisplayName => displayName;
         public string Hint => hint;
         public BinType CorrectBin => correctBin;

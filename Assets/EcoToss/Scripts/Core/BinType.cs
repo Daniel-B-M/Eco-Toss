@@ -1,17 +1,17 @@
 namespace EcoToss.Core
 {
     /// <summary>
-    /// Tipos de caneca según el código de colores de Colombia (Resolución 2184 de 2019).
+    /// Waste bin categories based on Colombia's waste separation color code (Resolution 2184 of 2019).
     /// </summary>
     public enum BinType
     {
-        /// <summary>Caneca blanca: plástico, vidrio, metal, papel y cartón limpios.</summary>
+        /// <summary>White bin: clean recyclables such as plastic, glass, metal, paper, and cardboard.</summary>
         Recyclable,
 
-        /// <summary>Caneca verde: restos de comida y residuos orgánicos.</summary>
+        /// <summary>Green bin: food scraps and organic waste.</summary>
         Organic,
 
-        /// <summary>Caneca negra: papel higiénico, servilletas y residuos contaminados.</summary>
+        /// <summary>Black bin: non-recyclables, toilet paper, napkins, and contaminated items.</summary>
         NonRecyclable
     }
 }

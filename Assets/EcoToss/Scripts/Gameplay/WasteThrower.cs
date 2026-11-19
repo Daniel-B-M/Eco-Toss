@@ -3,6 +3,9 @@ using UnityEngine.InputSystem;
 
 namespace EcoToss.Gameplay
 {
+    /// <summary>
+    /// Controls the charging mechanism, countdown timer, and physics launch of the waste object.
+    /// </summary>
     public class WasteThrower : MonoBehaviour
     {
         [Header("Referencias")]
@@ -18,10 +21,12 @@ namespace EcoToss.Gameplay
         [Header("Tiempo de apuntado")]
         [SerializeField, Min(0.1f)] private float aimDuration = 5f;
 
+        // Runtime state variables
         private float currentLaunchSpeed;
         private float remainingAimTime;
         private bool hasLaunched;
 
+        // Public accessors for trajectory calculation and game state
         public Vector3 LaunchVelocity => aimDirectionPivot.forward * currentLaunchSpeed;
         public bool HasLaunched => hasLaunched;
         public float RemainingAimTime => remainingAimTime;
@@ -29,6 +34,7 @@ namespace EcoToss.Gameplay
 
         private void Awake()
         {
+            // Initialize launch parameters and keep the waste stationary before launch
             currentLaunchSpeed = minLaunchSpeed;
             remainingAimTime = aimDuration;
             wasteBody.isKinematic = true;
@@ -39,8 +45,10 @@ namespace EcoToss.Gameplay
             if (hasLaunched)
                 return;
 
+            // Decrement the remaining aiming countdown timer
             remainingAimTime = Mathf.Max(0f, remainingAimTime - Time.deltaTime);
 
+            // Handle charge accumulation while holding the left mouse button, and throw on release
             if (Mouse.current != null)
             {
                 if (Mouse.current.leftButton.isPressed)
@@ -60,12 +68,16 @@ namespace EcoToss.Gameplay
                 }
             }
 
+            // Trigger automatic launch if time expires
             if (remainingAimTime <= 0f)
             {
                 Launch();
             }
         }
 
+        /// <summary>
+        /// Enables physics simulation and applies initial launch velocity.
+        /// </summary>
         private void Launch()
         {
             hasLaunched = true;
@@ -76,6 +88,7 @@ namespace EcoToss.Gameplay
 
         private void OnGUI()
         {
+            // Display debug HUD showing aiming countdown timer or launch status
             GUIStyle style = new GUIStyle(GUI.skin.box);
             style.font = uiFont;
             style.fontSize = 28;

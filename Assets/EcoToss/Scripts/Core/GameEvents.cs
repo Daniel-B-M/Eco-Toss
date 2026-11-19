@@ -4,41 +4,39 @@ using UnityEngine;
 namespace EcoToss.Core
 {
     /// <summary>
-    /// Canal central de eventos del juego (patrón Observer).
-    /// Quien produce algo llama a un método Raise...; quien quiere reaccionar
-    /// se suscribe al evento en OnEnable y se desuscribe en OnDisable.
+    /// Central game event bus implementing the Observer pattern.
+    /// Producers invoke Raise... methods, while listeners subscribe in OnEnable and unsubscribe in OnDisable.
     /// </summary>
     public static class GameEvents
     {
-        // ---------- Turno ----------
-
-        /// <summary>Un residuo nuevo está listo para lanzar.</summary>
+        #region Turn Events
+        /// <summary>Invoked when a new waste item is spawned and ready to throw.</summary>
         public static event Action<WasteData> WasteSpawned;
 
-        /// <summary>El jugador lanzó el residuo.</summary>
+        /// <summary>Invoked when the player initiates a throw.</summary>
         public static event Action<WasteData> WasteThrown;
+        #endregion
 
-        // ---------- Resultado del lanzamiento ----------
-
-        /// <summary>El residuo cayó en la caneca correcta.</summary>
+        #region Throw Outcome Events
+        /// <summary>Invoked when the waste lands in the matching recycling bin.</summary>
         public static event Action<WasteData> WasteSortedCorrectly;
 
-        /// <summary>El residuo cayó en una caneca equivocada. Incluye la caneca en la que cayó.</summary>
+        /// <summary>Invoked when the waste lands in the wrong bin (includes target bin hit).</summary>
         public static event Action<WasteData, BinType> WasteSortedIncorrectly;
 
-        /// <summary>El residuo no entró en ninguna caneca (cayó al piso o se acabó el tiempo).</summary>
+        /// <summary>Invoked when the waste misses all bins (ground hit or timer expiration).</summary>
         public static event Action<WasteData> WasteMissed;
+        #endregion
 
-        // ---------- Progreso ----------
-
-        /// <summary>Se alcanzó una racha de aciertos seguidos. Incluye el número de aciertos.</summary>
+        #region Progression Events
+        /// <summary>Invoked when a consecutive correct sort streak is achieved.</summary>
         public static event Action<int> CorrectStreakReached;
 
-        /// <summary>El karma cambió. Incluye el valor nuevo, de 0 a 100.</summary>
+        /// <summary>Invoked when player karma changes (normalized percentage: 0 to 100).</summary>
         public static event Action<int> KarmaChanged;
+        #endregion
 
-        // ---------- Métodos para disparar los eventos ----------
-
+        #region Event Invocators
         public static void RaiseWasteSpawned(WasteData wasteData) => WasteSpawned?.Invoke(wasteData);
         public static void RaiseWasteThrown(WasteData wasteData) => WasteThrown?.Invoke(wasteData);
         public static void RaiseWasteSortedCorrectly(WasteData wasteData) => WasteSortedCorrectly?.Invoke(wasteData);
@@ -46,10 +44,12 @@ namespace EcoToss.Core
         public static void RaiseWasteMissed(WasteData wasteData) => WasteMissed?.Invoke(wasteData);
         public static void RaiseCorrectStreakReached(int streakCount) => CorrectStreakReached?.Invoke(streakCount);
         public static void RaiseKarmaChanged(int karmaPercent) => KarmaChanged?.Invoke(karmaPercent);
+        #endregion
 
+        #region Lifecycle Reset
         /// <summary>
-        /// Limpia todas las suscripciones al iniciar el juego. Evita que queden suscriptores
-        /// de una partida anterior cuando el "Domain Reload" del editor está desactivado.
+        /// Resets all event delegate subscriptions on game initialization to prevent stale listeners
+        /// when Editor Domain Reload is disabled.
         /// </summary>
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
         private static void ClearAllSubscribers()
@@ -62,5 +62,6 @@ namespace EcoToss.Core
             CorrectStreakReached = null;
             KarmaChanged = null;
         }
+        #endregion
     }
 }
