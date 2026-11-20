@@ -32,6 +32,10 @@ namespace EcoToss.Core
         /// <summary>Invoked when a consecutive correct sort streak is achieved.</summary>
         public static event Action<int> CorrectStreakReached;
 
+        /// <summary>Invoked whenever the consecutive correct sort count changes (grows on a hit, resets to 0 on any failure).</summary>
+        public static event Action<int> CorrectStreakChanged;
+
+
         /// <summary>Invoked when player karma changes (normalized percentage: 0 to 100).</summary>
         public static event Action<int> KarmaChanged;
         #endregion
@@ -48,6 +52,8 @@ namespace EcoToss.Core
         public static void RaiseWasteSortedIncorrectly(WasteData wasteData, BinType binHit) => WasteSortedIncorrectly?.Invoke(wasteData, binHit);
         public static void RaiseWasteMissed(WasteData wasteData) => WasteMissed?.Invoke(wasteData);
         public static void RaiseCorrectStreakReached(int streakCount) => CorrectStreakReached?.Invoke(streakCount);
+        public static void RaiseCorrectStreakChanged(int currentStreak) => CorrectStreakChanged?.Invoke(currentStreak);
+
         public static void RaiseKarmaChanged(int karmaPercent) => KarmaChanged?.Invoke(karmaPercent);
         public static void RaiseGameStateChanged(GameState newState) => GameStateChanged?.Invoke(newState);
         #endregion
@@ -66,6 +72,8 @@ namespace EcoToss.Core
             WasteSortedIncorrectly = null;
             WasteMissed = null;
             CorrectStreakReached = null;
+            CorrectStreakChanged = null;
+
             KarmaChanged = null;
             GameStateChanged = null;
         }

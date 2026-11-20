@@ -21,9 +21,6 @@ namespace EcoToss.Gameplay
         [Tooltip("If false, the timer never expires (Accessibility / Assisted Mode).")]
         [SerializeField] private bool autoThrowEnabled = true;
 
-        [Header("Temporary Debug HUD (removed in Phase 5)")]
-        [SerializeField] private Font debugHudFont;
-
         #endregion
 
         #region Events
@@ -82,26 +79,6 @@ namespace EcoToss.Gameplay
         public void Stop()
         {
             IsRunning = false;
-        }
-
-        #endregion
-
-        #region Temporary Debug HUD
-
-        private void OnGUI()
-        {
-            if (!IsRunning) return;
-
-            GUIStyle style = new GUIStyle(GUI.skin.box)
-            {
-                font = debugHudFont,
-                fontSize = 28,
-                alignment = TextAnchor.MiddleCenter
-            };
-            style.normal.textColor = Color.white;
-
-            string message = autoThrowEnabled ? $"Tiempo: {RemainingTime:0.0} s" : "Sin límite de tiempo";
-            GUI.Box(new Rect(20, 20, 320, 60), message, style);
         }
 
         #endregion

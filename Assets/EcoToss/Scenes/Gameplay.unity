@@ -181,7 +181,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 5,0 s
+  m_text: 5 s
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 82bb0ba2bd1334a04b99439d828df419, type: 2}
   m_sharedMaterial: {fileID: 7565357924602390207, guid: 82bb0ba2bd1334a04b99439d828df419, type: 2}
@@ -1494,6 +1494,7 @@ GameObject:
   - component: {fileID: 359705085}
   - component: {fileID: 359705087}
   - component: {fileID: 359705086}
+  - component: {fileID: 359705088}
   m_Layer: 5
   m_Name: KarmaPanel
   m_TagString: Untagged
@@ -1562,6 +1563,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 359705084}
   m_CullTransparentMesh: 1
+--- !u!114 &359705088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 359705084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a58567dae9f8f4614ab3d651387b2898, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EcoToss.UI.KarmaBarView
+  karmaBarFillRect: {fileID: 1036012567}
+  karmaValueText: {fileID: 1542315176}
+  streakText: {fileID: 1271475662}
+  fillAnimationSpeed: 0.5
+  karmaValueFormat: '{0}/100'
+  streakFormat: 'Racha: {0}'
 --- !u!4 &372356538 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: f75f232634166cc459a69e7fd7a30880, type: 3}
@@ -4213,11 +4232,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1578074985}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 24}
-  m_Pivot: {x: 0, y: 1}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1036012568
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5934,6 +5953,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1292415281}
+  - component: {fileID: 1292415282}
   m_Layer: 5
   m_Name: HUD
   m_TagString: Untagged
@@ -5967,6 +5987,24 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1292415282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1292415280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58ab9221c2a5744378736e0b60716cf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EcoToss.UI.AimHudView
+  aimTimer: {fileID: 864779505}
+  wasteThrower: {fileID: 864779501}
+  timerValueText: {fileID: 22460654}
+  powerBarFillRect: {fileID: 2130975028}
+  timerSecondsFormat: '{0} s'
+  timerDisabledText: "Sin l\xEDmite"
 --- !u!1 &1319748110
 GameObject:
   m_ObjectHideFlags: 0
@@ -9128,11 +9166,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 72179562}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -0.000015258789, y: 0}
-  m_SizeDelta: {x: 164, y: 28}
-  m_Pivot: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &2130975029
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15237,7 +15275,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3200000001
 RectTransform:
   m_ObjectHideFlags: 0

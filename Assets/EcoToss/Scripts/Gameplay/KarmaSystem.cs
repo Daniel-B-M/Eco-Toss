@@ -75,6 +75,7 @@ namespace EcoToss.Gameplay
         {
             // Start (not Awake) so the HUD and other listeners are already subscribed.
             GameEvents.RaiseKarmaChanged(currentKarma);
+            GameEvents.RaiseCorrectStreakChanged(consecutiveCorrectSorts);
         }
 
         #endregion
@@ -86,6 +87,7 @@ namespace EcoToss.Gameplay
             if (!IsMatchPlaying) return;
 
             consecutiveCorrectSorts++;
+            GameEvents.RaiseCorrectStreakChanged(consecutiveCorrectSorts);
             int karmaDelta = karmaConfig.CorrectSortReward;
 
             // The bonus is granted once per streak; any failure re-arms it.
@@ -126,6 +128,7 @@ namespace EcoToss.Gameplay
         {
             consecutiveCorrectSorts = 0;
             hasStreakBonusBeenGranted = false;
+            GameEvents.RaiseCorrectStreakChanged(consecutiveCorrectSorts);
         }
 
         /// <summary>Adds (or subtracts) karma once, clamps it, announces it and checks the match end.</summary>
