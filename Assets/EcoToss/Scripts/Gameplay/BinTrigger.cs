@@ -18,10 +18,6 @@ namespace EcoToss.Gameplay
 
         [Tooltip("Center of the bin opening. Used later by Assisted Mode (ThrowToBin).")]
         [SerializeField] private Transform binMouthPoint;
-
-        [Header("Debug")]
-        [SerializeField] private bool logDepositsInConsole = true;
-
         #endregion
 
         #region Public Properties
@@ -71,10 +67,6 @@ namespace EcoToss.Gameplay
         private void EvaluateDeposit(WasteData depositedWaste)
         {
             bool isCorrectBin = depositedWaste.CorrectBin == binType;
-
-            if (logDepositsInConsole)
-                Debug.Log($"[{nameof(BinTrigger)}] {depositedWaste.DisplayName} -> {binType}: {(isCorrectBin ? "CORRECT" : "WRONG")}", this);
-
             if (isCorrectBin)
                 GameEvents.RaiseWasteSortedCorrectly(depositedWaste);
             else

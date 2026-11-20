@@ -29,6 +29,9 @@ namespace EcoToss.Core
         {
             if (Instance == this)
                 Instance = null;
+
+            // The pause sets timeScale to 0; leaving the scene (restart or main menu) must never keep it frozen.
+            Time.timeScale = 1f;
         }
         #endregion
 

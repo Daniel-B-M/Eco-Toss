@@ -21,10 +21,6 @@ namespace EcoToss.Gameplay
         [Header("Timeout")]
         [Tooltip("Seconds after launch before an unresolved waste counts as a miss.")]
         [SerializeField, Min(0.5f)] private float missTimeoutSeconds = 4f;
-
-        [Header("Debug")]
-        [SerializeField] private bool logMissesInConsole = true;
-
         #endregion
 
         #region Private Fields
@@ -52,7 +48,7 @@ namespace EcoToss.Gameplay
             if (hitBody == null) return;
             if (!hitBody.TryGetComponent(out WasteItem landedWaste)) return;
 
-            RegisterMiss(landedWaste, "hit the floor");
+            RegisterMiss(landedWaste);
         }
 
         #endregion
@@ -76,7 +72,7 @@ namespace EcoToss.Gameplay
             if (launchedWaste == null || !launchedWaste.gameObject.activeInHierarchy || !launchedWaste.IsInFlight)
                 yield break;
 
-            RegisterMiss(launchedWaste, "timed out");
+            RegisterMiss(launchedWaste);
         }
 
         private void StopMissTimeout()
@@ -92,13 +88,9 @@ namespace EcoToss.Gameplay
         #region Evaluation
 
         /// <summary>Raises WasteMissed unless a bin (or a previous miss) already resolved this throw.</summary>
-        private void RegisterMiss(WasteItem missedWaste, string reason)
+        private void RegisterMiss(WasteItem missedWaste)
         {
             if (!missedWaste.TryMarkAsResolved()) return;
-
-            if (logMissesInConsole)
-                Debug.Log($"[{nameof(MissDetector)}] {missedWaste.Data.DisplayName} MISSED ({reason})", this);
-
             GameEvents.RaiseWasteMissed(missedWaste.Data);
         }
 

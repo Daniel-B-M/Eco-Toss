@@ -22,10 +22,6 @@ namespace EcoToss.Gameplay
 
         [Header("Config")]
         [SerializeField] private KarmaConfig karmaConfig;
-
-        [Header("Debug")]
-        [SerializeField] private bool logKarmaInConsole = true;
-
         #endregion
 
         #region Private Fields
@@ -101,7 +97,7 @@ namespace EcoToss.Gameplay
                 GameEvents.RaiseCorrectStreakReached(consecutiveCorrectSorts);
             }
 
-            ApplyKarmaDelta(karmaDelta, reachedStreak ? "correct + streak bonus" : "correct");
+            ApplyKarmaDelta(karmaDelta);
         }
 
         private void HandleWasteSortedIncorrectly(WasteData sortedWaste, BinType binHit)
@@ -109,7 +105,7 @@ namespace EcoToss.Gameplay
             if (!IsMatchPlaying) return;
 
             ResetStreak();
-            ApplyKarmaDelta(-karmaConfig.WrongBinPenalty, "wrong bin");
+            ApplyKarmaDelta(-karmaConfig.WrongBinPenalty);
         }
 
         private void HandleWasteMissed(WasteData missedWaste)
@@ -117,7 +113,7 @@ namespace EcoToss.Gameplay
             if (!IsMatchPlaying) return;
 
             ResetStreak();
-            ApplyKarmaDelta(-karmaConfig.MissPenalty, "missed");
+            ApplyKarmaDelta(-karmaConfig.MissPenalty);
         }
 
         #endregion
@@ -132,13 +128,9 @@ namespace EcoToss.Gameplay
         }
 
         /// <summary>Adds (or subtracts) karma once, clamps it, announces it and checks the match end.</summary>
-        private void ApplyKarmaDelta(int karmaDelta, string reason)
+        private void ApplyKarmaDelta(int karmaDelta)
         {
             currentKarma = Mathf.Clamp(currentKarma + karmaDelta, MinKarma, MaxKarma);
-
-            if (logKarmaInConsole)
-                Debug.Log($"[{nameof(KarmaSystem)}] {reason}: {karmaDelta:+#;-#;0} -> {currentKarma}% (streak {consecutiveCorrectSorts})", this);
-
             GameEvents.RaiseKarmaChanged(currentKarma);
             CheckMatchEnd();
         }

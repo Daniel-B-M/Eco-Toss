@@ -43,6 +43,9 @@ namespace EcoToss.Gameplay
         /// <summary>True when the match is in the Playing state.</summary>
         public bool IsInputAllowed => isInputAllowed;
 
+        /// <summary>True if the cursor should be locked while Playing. The pause menu uses it to detect a lost cursor lock (WebGL Escape, Alt+Tab).</summary>
+        public bool IsCursorLockEnabled => lockCursorWhilePlaying;
+
         private bool CanReadMouse => isInputAllowed && Mouse.current != null;
 
         #endregion
