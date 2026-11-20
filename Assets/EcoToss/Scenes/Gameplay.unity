@@ -2401,6 +2401,7 @@ GameObject:
   - component: {fileID: 590614964}
   - component: {fileID: 590614966}
   - component: {fileID: 590614965}
+  - component: {fileID: 590614967}
   m_Layer: 5
   m_Name: WastePanel
   m_TagString: Untagged
@@ -2467,6 +2468,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 590614963}
   m_CullTransparentMesh: 1
+--- !u!114 &590614967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 590614963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20137ddb2a423403e847c78300a33675, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EcoToss.UI.CurrentWasteView
+  wasteNameText: {fileID: 1278039606}
+  noWasteText: "\u2014"
 --- !u!1 &590708797
 GameObject:
   m_ObjectHideFlags: 0
@@ -3672,7 +3687,6 @@ MonoBehaviour:
   throwInputReader: {fileID: 864779504}
   aimDuration: 5
   autoThrowEnabled: 1
-  debugHudFont: {fileID: 12800000, guid: f36bc5dbde8843d28f12399aade62adc, type: 3}
 --- !u!1001 &888032014
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15275,7 +15289,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &3200000001
 RectTransform:
   m_ObjectHideFlags: 0
