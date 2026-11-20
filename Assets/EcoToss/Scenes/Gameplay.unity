@@ -8538,7 +8538,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EcoToss.Gameplay.TurnController
   spawnManager: {fileID: 789489522}
   wasteThrower: {fileID: 864779501}
-  delayBeforeNextTurn: 1.5
+  delayBeforeNextTurn: 3
 --- !u!4 &1775072221
 Transform:
   m_ObjectHideFlags: 0
