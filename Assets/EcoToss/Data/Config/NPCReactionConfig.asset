@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d319260b0c0b944779766a8e1fc87c9e, type: 3}
+  m_Name: NPCReactionConfig
+  m_EditorClassIdentifier: Assembly-CSharp::EcoToss.Feedback.NPCReactionConfig
+  feedbackChancePercent: 100
+  minThrowsBetweenFeedback: 0
+  feedbackCandidates:
+  - {fileID: 11400000, guid: dd31297cd6cc24ed19b59905c5937046, type: 2}
+  - {fileID: 11400000, guid: 6f1c387b8adc7469ea1ea89543539414, type: 2}
+  - {fileID: 11400000, guid: 6590b772d3c6b46a2894db713fa33a35, type: 2}
+  streakPortrait: {fileID: 21300000, guid: 6ecf1c97c637f4c0c9f0f3c7c75d0fef, type: 3}
+  streakDisplayName: "Don Jacinto y Do\xF1a Gloria"
+  streakMessages:
+  - "\xA1Eso es Orgullo Barrial! As\xED se cuida la plaza."
+  - "\xA1Esto hay que cont\xE1rselo a todo el barrio!"
+  - "\xA1Por fin alguien que separa bien! Siga as\xED, vecino."

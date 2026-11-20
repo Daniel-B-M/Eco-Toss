@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdd0e06040fb04bec877b9f0d83a1702, type: 3}
+  m_Name: NPCProfile_Gloria
+  m_EditorClassIdentifier: Assembly-CSharp::EcoToss.Feedback.NPCProfile
+  displayName: "Do\xF1a Gloria"
+  positiveReaction:
+    portrait: {fileID: 21300000, guid: 878fb8cfe29d111489ef5f98da1227a9, type: 3}
+    messages:
+    - "\xA1Ay, qu\xE9 juicioso! Le voy a contar a todas."
+    - "As\xED me gusta, vecino. \xA1Muy bien!"
+    - "Mire qu\xE9 bonito, la plaza limpiecita."
+  negativeReaction:
+    portrait: {fileID: 21300000, guid: ea295dc96f41de642af5a66494ddc32b, type: 3}
+    messages:
+    - "Uy, \xBFvieron eso? Ya todo el barrio se va a enterar..."
+    - "\xA1Ay, no! \xBFY eso d\xF3nde lo bot\xF3?"
+    - "Tan mal... y despu\xE9s dicen que una es la chismosa."
+  streakPortrait: {fileID: 21300000, guid: 1380568c3666f5849998cba7f5823bdb, type: 3}
