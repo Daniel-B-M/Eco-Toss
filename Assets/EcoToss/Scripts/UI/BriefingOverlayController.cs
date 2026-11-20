@@ -2,6 +2,7 @@ using System;
 using EcoToss.Core;
 using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 namespace EcoToss.UI
@@ -130,6 +131,28 @@ namespace EcoToss.UI
             overlayCanvasGroup.alpha = isVisible ? 1f : 0f;
             overlayCanvasGroup.interactable = isVisible;
             overlayCanvasGroup.blocksRaycasts = isVisible;
+
+            UpdateButtonSelection(isVisible);
+        }
+
+        /// <summary>
+        /// Gives keyboard and gamepad focus to the main button while the overlay is visible,
+        /// and releases it when hidden so no invisible button keeps the selection.
+        /// </summary>
+        private void UpdateButtonSelection(bool isVisible)
+        {
+            EventSystem eventSystem = EventSystem.current;
+            if (eventSystem == null) return;
+
+            if (isVisible)
+            {
+                eventSystem.SetSelectedGameObject(null);
+                eventSystem.SetSelectedGameObject(startMatchButton.gameObject);
+            }
+            else if (eventSystem.currentSelectedGameObject == startMatchButton.gameObject)
+            {
+                eventSystem.SetSelectedGameObject(null);
+            }
         }
 
         #endregion
