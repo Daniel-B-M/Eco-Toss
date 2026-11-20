@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 552be3c97419e46bcb7b3c1938e6d66f, type: 3}
   m_Name: WasteData_CoffeeCup
   m_EditorClassIdentifier: Assembly-CSharp::EcoToss.Core.WasteData
-  displayName: "Vaso de caf\xE9"
+  displayName: "Vaso de caf\xE9 sucio"
   hint: Vasos con residuos de bebida no se reciclan.
   correctBin: 2
   prefab: {fileID: 3945530492775627274, guid: fa8eb32cadfdd4cab95d073a2d31a5de, type: 3}

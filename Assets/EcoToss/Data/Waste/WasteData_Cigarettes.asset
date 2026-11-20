@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 552be3c97419e46bcb7b3c1938e6d66f, type: 3}
   m_Name: WasteData_Cigarettes
   m_EditorClassIdentifier: Assembly-CSharp::EcoToss.Core.WasteData
-  displayName: Colillas
+  displayName: Colillas de Cigarro
   hint: Las colillas contaminan; no se aprovechan.
   correctBin: 2
   prefab: {fileID: 4311410091967625876, guid: 737385989dde54b769722ca6ac683fc0, type: 3}
