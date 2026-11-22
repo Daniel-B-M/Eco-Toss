@@ -6,67 +6,110 @@ using UnityEngine.InputSystem.UI;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class MainMenuController : MonoBehaviour
+namespace EcoToss.UI
 {
-    [SerializeField] private Button playButton;
-    [SerializeField] private Button helpButton;
-    [SerializeField] private Button quitButton;
-    [SerializeField] private Button backButton;
-    [SerializeField] private GameObject menuPanel;
-    [SerializeField] private GameObject helpPanel;
-    [SerializeField] private TMP_Text statusText;
-    [SerializeField] private string gameplayScene = "Gameplay";
-
-    private void Awake()
+    /// <summary>
+    /// Manages main menu navigation, sub-panel transitions, and scene loading.
+    /// </summary>
+    public class MainMenuController : MonoBehaviour
     {
-        if (EventSystem.current == null)
+        [Header("Menú principal")]
+        [SerializeField] private GameObject menuPanel;
+        [SerializeField] private Button playButton;
+        [SerializeField] private Button helpButton;
+        [SerializeField] private Button settingsButton;
+        [SerializeField] private Button quitButton;
+        [SerializeField] private TMP_Text statusText;
+
+        [Header("Panel de ayuda")]
+        [SerializeField] private GameObject helpPanel;
+        [SerializeField] private Button helpBackButton;
+
+        [Header("Panel de ajustes")]
+        [SerializeField] private GameObject settingsPanel;
+        [SerializeField] private Button settingsBackButton;
+
+        [Header("Escenas")]
+        [SerializeField] private string gameplaySceneName = "Gameplay";
+
+        private void Awake()
         {
-            var events = new GameObject("EventSystem", typeof(EventSystem));
-            events.AddComponent<InputSystemUIInputModule>().AssignDefaultActions();
+            // Ensure an EventSystem with the new Input System module is active
+            if (EventSystem.current == null)
+            {
+                var eventSystemObject = new GameObject("EventSystem", typeof(EventSystem));
+                eventSystemObject.AddComponent<InputSystemUIInputModule>().AssignDefaultActions();
+            }
+
+            // Unlock and reveal the mouse cursor for UI interactions
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+
+            // Register button click listeners
+            playButton.onClick.AddListener(StartGame);
+            helpButton.onClick.AddListener(ShowHelpPanel);
+            settingsButton.onClick.AddListener(ShowSettingsPanel);
+            quitButton.onClick.AddListener(QuitGame);
+            helpBackButton.onClick.AddListener(ShowMainMenu);
+            settingsBackButton.onClick.AddListener(ShowMainMenu);
+
+            ShowMainMenu();
         }
 
-        Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true;
-        playButton.onClick.AddListener(Play);
-        helpButton.onClick.AddListener(() => ShowHelp(true));
-        backButton.onClick.AddListener(() => ShowHelp(false));
-        quitButton.onClick.AddListener(Quit);
-        ShowHelp(false);
-    }
-
-    private void Update()
-    {
-        if (helpPanel.activeSelf && Keyboard.current != null && Keyboard.current.escapeKey.wasPressedThisFrame)
-            ShowHelp(false);
-    }
-
-    private void ShowHelp(bool visible)
-    {
-        menuPanel.SetActive(!visible);
-        helpPanel.SetActive(visible);
-        EventSystem.current.SetSelectedGameObject(null);
-        EventSystem.current.SetSelectedGameObject(visible ? backButton.gameObject : playButton.gameObject);
-    }
-
-    private void Play()
-    {
-        if (!Application.CanStreamedLevelBeLoaded(gameplayScene))
+        private void Update()
         {
-            statusText.text = "La escena Gameplay no está disponible en la compilación.";
-            return;
-        }
-        playButton.interactable = false;
-        SceneManager.LoadSceneAsync(gameplayScene);
-    }
+            // Allow returning to the main menu using the Escape key from open sub-panels
+            bool isSubPanelOpen = !menuPanel.activeSelf;
+            bool escapePressed = Keyboard.current != null && Keyboard.current.escapeKey.wasPressedThisFrame;
 
-    private void Quit()
-    {
+            if (isSubPanelOpen && escapePressed)
+                ShowMainMenu();
+        }
+
+        #region Panel Navigation
+        private void ShowMainMenu() => ShowPanel(menuPanel, playButton);
+        private void ShowHelpPanel() => ShowPanel(helpPanel, helpBackButton);
+        private void ShowSettingsPanel() => ShowPanel(settingsPanel, settingsBackButton);
+
+        /// <summary>
+        /// Activates the specified panel, disables inactive ones, and sets UI selection focus
+        /// to maintain keyboard and gamepad navigation.
+        /// </summary>
+        private void ShowPanel(GameObject panelToShow, Button buttonToSelect)
+        {
+            menuPanel.SetActive(panelToShow == menuPanel);
+            helpPanel.SetActive(panelToShow == helpPanel);
+            settingsPanel.SetActive(panelToShow == settingsPanel);
+
+            EventSystem.current.SetSelectedGameObject(null);
+            EventSystem.current.SetSelectedGameObject(buttonToSelect.gameObject);
+        }
+        #endregion
+
+        #region Game Flow
+        private void StartGame()
+        {
+            // Verify scene availability in build settings prior to asynchronous load
+            if (!Application.CanStreamedLevelBeLoaded(gameplaySceneName))
+            {
+                statusText.text = "La escena Gameplay no está disponible en la compilación.";
+                return;
+            }
+            playButton.interactable = false;
+            SceneManager.LoadSceneAsync(gameplaySceneName);
+        }
+
+        private void QuitGame()
+        {
+            // Handle cross-platform application exit (Editor, WebGL, or Standalone)
 #if UNITY_EDITOR
-        UnityEditor.EditorApplication.isPlaying = false;
+            UnityEditor.EditorApplication.isPlaying = false;
 #elif UNITY_WEBGL
-        statusText.text = "Puedes cerrar la pestaña para salir del juego.";
+            statusText.text = "Puedes cerrar la pestaña para salir del juego.";
 #else
-        Application.Quit();
+            Application.Quit();
 #endif
+        }
+        #endregion
     }
 }

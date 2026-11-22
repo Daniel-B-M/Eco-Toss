@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdd0e06040fb04bec877b9f0d83a1702, type: 3}
+  m_Name: NPCProfile_Dog
+  m_EditorClassIdentifier: Assembly-CSharp::EcoToss.Feedback.NPCProfile
+  displayName: El Perro
+  positiveReaction:
+    portrait: {fileID: 21300000, guid: 5b5cd2e0144512745ba05ab4f1e692f3, type: 3}
+    messages:
+    - "[\xA1Guau, guau!] *Mueve la cola*"
+    - '[Ladrido alegre]'
+    - '*Te trae la pelota, feliz*'
+  negativeReaction:
+    portrait: {fileID: 21300000, guid: 3c362f278b44b5c4588255317872810c, type: 3}
+    messages:
+    - '[Grrr...] *Te mira con reproche*'
+    - '*Olfatea la basura del piso...*'
+    - "[\xA1Guau!] *Ladra hacia la caneca*"
+  streakPortrait: {fileID: 0}

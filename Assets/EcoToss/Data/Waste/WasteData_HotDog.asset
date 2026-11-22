@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 552be3c97419e46bcb7b3c1938e6d66f, type: 3}
+  m_Name: WasteData_HotDog
+  m_EditorClassIdentifier: Assembly-CSharp::EcoToss.Core.WasteData
+  displayName: Perro caliente
+  hint: "La comida sobrante es org\xE1nica."
+  correctBin: 1
+  prefab: {fileID: 1423738787232122664, guid: 891db05cd4b9e42c2ada591b158a94b2, type: 3}
