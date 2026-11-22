@@ -669,6 +669,7 @@ GameObject:
   - component: {fileID: 200702}
   - component: {fileID: 200703}
   - component: {fileID: 200704}
+  - component: {fileID: 200705}
   m_Layer: 5
   m_Name: PlayButton
   m_TagString: Untagged
@@ -778,6 +779,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &200705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 200700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7ffe6e1e473e4da99c65fa97b67793a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EcoToss.UI.ButtonSoundEmitter
 --- !u!1 &200800
 GameObject:
   m_ObjectHideFlags: 0
@@ -927,6 +940,7 @@ GameObject:
   - component: {fileID: 200902}
   - component: {fileID: 200903}
   - component: {fileID: 200904}
+  - component: {fileID: 200905}
   m_Layer: 5
   m_Name: HelpButton
   m_TagString: Untagged
@@ -1036,6 +1050,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &200905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 200900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7ffe6e1e473e4da99c65fa97b67793a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EcoToss.UI.ButtonSoundEmitter
 --- !u!1 &201000
 GameObject:
   m_ObjectHideFlags: 0
@@ -1185,6 +1211,7 @@ GameObject:
   - component: {fileID: 201102}
   - component: {fileID: 201103}
   - component: {fileID: 201104}
+  - component: {fileID: 201105}
   m_Layer: 5
   m_Name: QuitButton
   m_TagString: Untagged
@@ -1294,6 +1321,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &201105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 201100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7ffe6e1e473e4da99c65fa97b67793a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EcoToss.UI.ButtonSoundEmitter
 --- !u!1 &201200
 GameObject:
   m_ObjectHideFlags: 0
@@ -1758,6 +1797,7 @@ GameObject:
   - component: {fileID: 201702}
   - component: {fileID: 201703}
   - component: {fileID: 201704}
+  - component: {fileID: 201705}
   m_Layer: 5
   m_Name: BackButton
   m_TagString: Untagged
@@ -1867,6 +1907,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &201705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 201700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7ffe6e1e473e4da99c65fa97b67793a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EcoToss.UI.ButtonSoundEmitter
 --- !u!1 &201800
 GameObject:
   m_ObjectHideFlags: 0
@@ -2441,6 +2493,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 357228490}
   m_CullTransparentMesh: 1
+--- !u!1001 &649004948
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7945231334099912937, guid: 314338346941f467f9e3f13dd54aa4ec, type: 3}
+      propertyPath: m_Name
+      value: AudioManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 8607643967834703447, guid: 314338346941f467f9e3f13dd54aa4ec, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8607643967834703447, guid: 314338346941f467f9e3f13dd54aa4ec, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8607643967834703447, guid: 314338346941f467f9e3f13dd54aa4ec, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8607643967834703447, guid: 314338346941f467f9e3f13dd54aa4ec, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8607643967834703447, guid: 314338346941f467f9e3f13dd54aa4ec, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8607643967834703447, guid: 314338346941f467f9e3f13dd54aa4ec, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8607643967834703447, guid: 314338346941f467f9e3f13dd54aa4ec, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8607643967834703447, guid: 314338346941f467f9e3f13dd54aa4ec, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8607643967834703447, guid: 314338346941f467f9e3f13dd54aa4ec, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8607643967834703447, guid: 314338346941f467f9e3f13dd54aa4ec, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 314338346941f467f9e3f13dd54aa4ec, type: 3}
 --- !u!1 &712626729
 GameObject:
   m_ObjectHideFlags: 0
@@ -2555,6 +2664,7 @@ GameObject:
   - component: {fileID: 1303367820}
   - component: {fileID: 1303367819}
   - component: {fileID: 1303367818}
+  - component: {fileID: 1303367821}
   m_Layer: 5
   m_Name: SettingsButton
   m_TagString: Untagged
@@ -2664,6 +2774,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1303367816}
   m_CullTransparentMesh: 1
+--- !u!114 &1303367821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1303367816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7ffe6e1e473e4da99c65fa97b67793a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EcoToss.UI.ButtonSoundEmitter
 --- !u!1 &1380867336
 GameObject:
   m_ObjectHideFlags: 0
@@ -3040,6 +3162,7 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 649004948}
   - {fileID: 712626732}
   - {fileID: 1480849166}
   - {fileID: 200101}

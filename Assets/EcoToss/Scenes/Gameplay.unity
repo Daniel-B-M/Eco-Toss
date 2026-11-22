@@ -795,6 +795,18 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 62125825e49febf4a89f76daf85d9ca7, type: 3}
   m_PrefabInstance: {fileID: 194614452}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &171434437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3100000073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7ffe6e1e473e4da99c65fa97b67793a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EcoToss.UI.ButtonSoundEmitter
 --- !u!1001 &184536995
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1756,6 +1768,18 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: b82e76f4092b7d24aaeecddf36fe8d3b, type: 3}
   m_PrefabInstance: {fileID: 1653520599}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &394157628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3000000036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7ffe6e1e473e4da99c65fa97b67793a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EcoToss.UI.ButtonSoundEmitter
 --- !u!225 &398375038
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -1778,6 +1802,18 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: a1eb827aa0413ab4a8b3b08c0e1a8c56, type: 3}
   m_PrefabInstance: {fileID: 1662817962}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &415096501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3000000045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7ffe6e1e473e4da99c65fa97b67793a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EcoToss.UI.ButtonSoundEmitter
 --- !u!1 &418222090
 GameObject:
   m_ObjectHideFlags: 0
@@ -2216,6 +2252,18 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 66131d8838f42f545a30ce8606ce5365, type: 3}
   m_PrefabInstance: {fileID: 71251537}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &494032833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3000000102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7ffe6e1e473e4da99c65fa97b67793a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EcoToss.UI.ButtonSoundEmitter
 --- !u!4 &494617316 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 2d5fb229ae2945742b900a405a5e7a0b, type: 3}
@@ -2943,6 +2991,18 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d5fb229ae2945742b900a405a5e7a0b, type: 3}
+--- !u!114 &636988908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3000000018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7ffe6e1e473e4da99c65fa97b67793a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EcoToss.UI.ButtonSoundEmitter
 --- !u!1001 &653376467
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3005,6 +3065,30 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: b8365ae9a93a2e8498ae3c2646f3c455, type: 3}
   m_PrefabInstance: {fileID: 241800447}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &681115600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3000000071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7ffe6e1e473e4da99c65fa97b67793a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EcoToss.UI.ButtonSoundEmitter
+--- !u!114 &687780963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3000000080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7ffe6e1e473e4da99c65fa97b67793a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EcoToss.UI.ButtonSoundEmitter
 --- !u!1 &695226568
 GameObject:
   m_ObjectHideFlags: 0
@@ -3849,6 +3933,18 @@ MonoBehaviour:
   throwInputReader: {fileID: 864779504}
   aimDuration: 5
   autoThrowEnabled: 1
+--- !u!114 &883329028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3100000039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7ffe6e1e473e4da99c65fa97b67793a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EcoToss.UI.ButtonSoundEmitter
 --- !u!1001 &888032014
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5429,6 +5525,155 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: b14aef9a05449784da6735de9ec90b24, type: 3}
   m_PrefabInstance: {fileID: 260275179}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1256241991
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1256241992}
+  - component: {fileID: 1256241994}
+  - component: {fileID: 1256241993}
+  m_Layer: 5
+  m_Name: StreakBannerText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1256241992
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1256241991}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2060887885}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1256241993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1256241991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "\xA1Racha x3! +8 karma"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: f69a5da07c051456f9af6134de3a86ca, type: 2}
+  m_sharedMaterial: {fileID: -3474077557947223830, guid: f69a5da07c051456f9af6134de3a86ca, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4283094783
+  m_fontColor: {r: 1, g: 0.84, b: 0.29, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 52
+  m_fontSizeBase: 52
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_characterHorizontalScale: 1
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1256241994
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1256241991}
+  m_CullTransparentMesh: 1
+--- !u!114 &1258208540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3000000027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7ffe6e1e473e4da99c65fa97b67793a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EcoToss.UI.ButtonSoundEmitter
 --- !u!1 &1271475660
 GameObject:
   m_ObjectHideFlags: 0
@@ -6049,6 +6294,18 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f284b42849610642bfb5d418a57840b, type: 3}
+--- !u!114 &1289722199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3100000030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7ffe6e1e473e4da99c65fa97b67793a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EcoToss.UI.ButtonSoundEmitter
 --- !u!1 &1292415280
 GameObject:
   m_ObjectHideFlags: 0
@@ -6085,6 +6342,7 @@ RectTransform:
   - {fileID: 256622685}
   - {fileID: 434243428}
   - {fileID: 327293993}
+  - {fileID: 2060887885}
   m_Father: {fileID: 2085162314}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -6259,6 +6517,7 @@ GameObject:
   - component: {fileID: 1320581915}
   - component: {fileID: 1320581914}
   - component: {fileID: 1320581913}
+  - component: {fileID: 1320581916}
   m_Layer: 5
   m_Name: ShowBriefingButton
   m_TagString: Untagged
@@ -6368,6 +6627,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1320581911}
   m_CullTransparentMesh: 1
+--- !u!114 &1320581916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1320581911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7ffe6e1e473e4da99c65fa97b67793a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EcoToss.UI.ButtonSoundEmitter
 --- !u!4 &1349390417 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 2d5fb229ae2945742b900a405a5e7a0b, type: 3}
@@ -6894,6 +7165,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 6a690a756dbd65141a09a3ad7fafacc4, type: 3}
   m_PrefabInstance: {fileID: 1558696954}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1481840307
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7945231334099912937, guid: 314338346941f467f9e3f13dd54aa4ec, type: 3}
+      propertyPath: m_Name
+      value: AudioManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 8607643967834703447, guid: 314338346941f467f9e3f13dd54aa4ec, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8607643967834703447, guid: 314338346941f467f9e3f13dd54aa4ec, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8607643967834703447, guid: 314338346941f467f9e3f13dd54aa4ec, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8607643967834703447, guid: 314338346941f467f9e3f13dd54aa4ec, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8607643967834703447, guid: 314338346941f467f9e3f13dd54aa4ec, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8607643967834703447, guid: 314338346941f467f9e3f13dd54aa4ec, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8607643967834703447, guid: 314338346941f467f9e3f13dd54aa4ec, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8607643967834703447, guid: 314338346941f467f9e3f13dd54aa4ec, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8607643967834703447, guid: 314338346941f467f9e3f13dd54aa4ec, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8607643967834703447, guid: 314338346941f467f9e3f13dd54aa4ec, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 314338346941f467f9e3f13dd54aa4ec, type: 3}
 --- !u!4 &1483983611 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: f75f232634166cc459a69e7fd7a30880, type: 3}
@@ -9157,6 +9485,148 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 6458a4c9f91f22741a5064b5b7cfd892, type: 3}
   m_PrefabInstance: {fileID: 1723338209}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2060887884
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2060887885}
+  - component: {fileID: 2060887889}
+  - component: {fileID: 2060887888}
+  - component: {fileID: 2060887887}
+  - component: {fileID: 2060887886}
+  m_Layer: 5
+  m_Name: StreakBanner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2060887885
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2060887884}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1256241992}
+  m_Father: {fileID: 1292415281}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -667}
+  m_SizeDelta: {x: 640, y: 96}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2060887886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2060887884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15f9e86c50dce4031bdf985d64b964f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EcoToss.UI.StreakBannerView
+  bannerCanvasGroup: {fileID: 2060887889}
+  bannerRect: {fileID: 2060887885}
+  bannerText: {fileID: 1256241993}
+  karmaConfig: {fileID: 11400000, guid: 3feb00b24c09b4d5cae56fe658ac76a0, type: 2}
+  bannerTextFormat: "\xA1Racha x{0}! +{1} karma"
+  popDuration: 0.25
+  fadeOutDuration: 0.4
+  popScaleCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.5
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.6
+      value: 1.15
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &2060887887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2060887884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.55}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &2060887888
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2060887884}
+  m_CullTransparentMesh: 1
+--- !u!225 &2060887889
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2060887884}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
 --- !u!1 &2068253084
 GameObject:
   m_ObjectHideFlags: 0
@@ -10106,6 +10576,7 @@ GameObject:
   - component: {fileID: 3000000022}
   - component: {fileID: 3000000021}
   - component: {fileID: 3000000020}
+  - component: {fileID: 636988908}
   m_Layer: 5
   m_Name: ResumeButton
   m_TagString: Untagged
@@ -10364,6 +10835,7 @@ GameObject:
   - component: {fileID: 3000000031}
   - component: {fileID: 3000000030}
   - component: {fileID: 3000000029}
+  - component: {fileID: 1258208540}
   m_Layer: 5
   m_Name: SettingsButton
   m_TagString: Untagged
@@ -10622,6 +11094,7 @@ GameObject:
   - component: {fileID: 3000000040}
   - component: {fileID: 3000000039}
   - component: {fileID: 3000000038}
+  - component: {fileID: 394157628}
   m_Layer: 5
   m_Name: RestartButton
   m_TagString: Untagged
@@ -10880,6 +11353,7 @@ GameObject:
   - component: {fileID: 3000000049}
   - component: {fileID: 3000000048}
   - component: {fileID: 3000000047}
+  - component: {fileID: 415096501}
   m_Layer: 5
   m_Name: MainMenuButton
   m_TagString: Untagged
@@ -11628,6 +12102,7 @@ GameObject:
   - component: {fileID: 3000000075}
   - component: {fileID: 3000000074}
   - component: {fileID: 3000000073}
+  - component: {fileID: 681115600}
   m_Layer: 5
   m_Name: RestartConfirmationPanelConfirmButton
   m_TagString: Untagged
@@ -11886,6 +12361,7 @@ GameObject:
   - component: {fileID: 3000000084}
   - component: {fileID: 3000000083}
   - component: {fileID: 3000000082}
+  - component: {fileID: 687780963}
   m_Layer: 5
   m_Name: RestartConfirmationPanelCancelButton
   m_TagString: Untagged
@@ -12497,6 +12973,7 @@ GameObject:
   - component: {fileID: 3000000106}
   - component: {fileID: 3000000105}
   - component: {fileID: 3000000104}
+  - component: {fileID: 494032833}
   m_Layer: 5
   m_Name: ExitConfirmationPanelConfirmButton
   m_TagString: Untagged
@@ -12755,6 +13232,7 @@ GameObject:
   - component: {fileID: 3000000115}
   - component: {fileID: 3000000114}
   - component: {fileID: 3000000113}
+  - component: {fileID: 3000000120}
   m_Layer: 5
   m_Name: ExitConfirmationPanelCancelButton
   m_TagString: Untagged
@@ -13001,6 +13479,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3000000116}
   m_CullTransparentMesh: 1
+--- !u!114 &3000000120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3000000111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7ffe6e1e473e4da99c65fa97b67793a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EcoToss.UI.ButtonSoundEmitter
 --- !u!1 &3100000000
 GameObject:
   m_ObjectHideFlags: 0
@@ -13469,6 +13959,7 @@ GameObject:
   - component: {fileID: 3100000034}
   - component: {fileID: 3100000033}
   - component: {fileID: 3100000032}
+  - component: {fileID: 1289722199}
   m_Layer: 5
   m_Name: VictoryPanelReplayButton
   m_TagString: Untagged
@@ -13727,6 +14218,7 @@ GameObject:
   - component: {fileID: 3100000043}
   - component: {fileID: 3100000042}
   - component: {fileID: 3100000041}
+  - component: {fileID: 883329028}
   m_Layer: 5
   m_Name: VictoryPanelMainMenuButton
   m_TagString: Untagged
@@ -14339,6 +14831,7 @@ GameObject:
   - component: {fileID: 3100000077}
   - component: {fileID: 3100000076}
   - component: {fileID: 3100000075}
+  - component: {fileID: 171434437}
   m_Layer: 5
   m_Name: DefeatPanelReplayButton
   m_TagString: Untagged
@@ -14597,6 +15090,7 @@ GameObject:
   - component: {fileID: 3100000086}
   - component: {fileID: 3100000085}
   - component: {fileID: 3100000084}
+  - component: {fileID: 3100000091}
   m_Layer: 5
   m_Name: DefeatPanelMainMenuButton
   m_TagString: Untagged
@@ -14843,6 +15337,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3100000087}
   m_CullTransparentMesh: 1
+--- !u!114 &3100000091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3100000082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7ffe6e1e473e4da99c65fa97b67793a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EcoToss.UI.ButtonSoundEmitter
 --- !u!1 &3200000000
 GameObject:
   m_ObjectHideFlags: 0
@@ -17366,6 +17872,7 @@ GameObject:
   - component: {fileID: 3200000119}
   - component: {fileID: 3200000118}
   - component: {fileID: 3200000117}
+  - component: {fileID: 3200000124}
   m_Layer: 5
   m_Name: StartRoundButton
   m_TagString: Untagged
@@ -17612,6 +18119,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3200000120}
   m_CullTransparentMesh: 1
+--- !u!114 &3200000124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3200000115}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7ffe6e1e473e4da99c65fa97b67793a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EcoToss.UI.ButtonSoundEmitter
 --- !u!1001 &1582477077069174056
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17826,6 +18345,7 @@ Transform:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 1481840307}
   - {fileID: 1085445047}
   - {fileID: 1606435582}
   - {fileID: 2068253085}

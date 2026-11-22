@@ -2317,6 +2317,7 @@ GameObject:
   - component: {fileID: 8979897501747703420}
   - component: {fileID: 5126932995185708275}
   - component: {fileID: 4166960991734687929}
+  - component: {fileID: 2359065651594190287}
   m_Layer: 5
   m_Name: SettingsBackButton
   m_TagString: Untagged
@@ -2426,6 +2427,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &2359065651594190287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8810810069812916766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7ffe6e1e473e4da99c65fa97b67793a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EcoToss.UI.ButtonSoundEmitter
 --- !u!1 &8905175681914232302
 GameObject:
   m_ObjectHideFlags: 0
@@ -2572,6 +2585,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8358945473785804716}
+  - component: {fileID: 8531964385315760133}
   m_Layer: 5
   m_Name: SettingsPanel
   m_TagString: Untagged
@@ -2607,6 +2621,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 700, y: 720}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &8531964385315760133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9076161686699095008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 661659d18c79641c5aa427533d757126, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EcoToss.UI.VolumeSettingsView
+  masterVolumeSlider: {fileID: 1324332920553727512}
+  musicVolumeSlider: {fileID: 441787207113190520}
+  sfxVolumeSlider: {fileID: 5923911523266921834}
 --- !u!1 &9202745295149047823
 GameObject:
   m_ObjectHideFlags: 0
