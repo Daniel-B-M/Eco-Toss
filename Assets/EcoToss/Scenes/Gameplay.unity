@@ -1825,6 +1825,7 @@ GameObject:
   - component: {fileID: 418222093}
   - component: {fileID: 418222092}
   - component: {fileID: 418222091}
+  - component: {fileID: 418222094}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -1893,6 +1894,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &418222094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 418222090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f60809d43ebf48229eac38762623920, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EcoToss.UI.UISpaceSubmitBinding
 --- !u!1 &434243427
 GameObject:
   m_ObjectHideFlags: 0
@@ -3936,6 +3949,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::WasteAim
   throwInputReader: {fileID: 864779504}
   mouseSensitivity: 0.1
+  keyboardAimSpeed: 60
   maxHorizontalAngle: 45
   minVerticalAngle: 10
   maxVerticalAngle: 70

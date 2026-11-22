@@ -25,6 +25,10 @@ namespace EcoToss.Gameplay
 
         private bool isInputAllowed;
 
+        // True after entering Playing while the charge button may still be held from a menu
+        // (e.g. Space used to press "Start"). Charge input is ignored until it is fully released.
+        private bool isWaitingForChargeRelease;
+
         #endregion
 
         #region Public Properties
@@ -38,14 +42,17 @@ namespace EcoToss.Gameplay
             CanReadKeyboard ? ReadKeyboardAimAxis(Keyboard.current) : Vector2.zero;
 
         /// <summary>True while the charge button (left click or Space) is held down.</summary>
-        public bool IsChargeHeld => IsMouseChargeHeld || IsKeyboardChargeHeld;
+        public bool IsChargeHeld =>
+            !isWaitingForChargeRelease && (IsMouseChargeHeld || IsKeyboardChargeHeld);
 
         /// <summary>
         /// True only on the frame the charge is released.
         /// If both buttons are held, the throw happens when the last one is released.
         /// </summary>
         public bool WasChargeReleasedThisFrame =>
-            (WasMouseChargeReleasedThisFrame || WasKeyboardChargeReleasedThisFrame) && !IsChargeHeld;
+            !isWaitingForChargeRelease
+            && (WasMouseChargeReleasedThisFrame || WasKeyboardChargeReleasedThisFrame)
+            && !IsChargeHeld;
 
         /// <summary>True when the match is in the Playing state.</summary>
         public bool IsInputAllowed => isInputAllowed;
@@ -67,6 +74,24 @@ namespace EcoToss.Gameplay
             CanReadMouse && Mouse.current.leftButton.wasReleasedThisFrame;
         private bool WasKeyboardChargeReleasedThisFrame =>
             CanReadKeyboard && Keyboard.current.spaceKey.wasReleasedThisFrame;
+
+        /// <summary>
+        /// True when neither charge button is held nor was released this frame.
+        /// Checking the release frame too means the press that came from a menu can never become a throw,
+        /// no matter which script runs Update first.
+        /// </summary>
+        private static bool AreChargeButtonsFullyReleased()
+        {
+            Mouse mouse = Mouse.current;
+            Keyboard keyboard = Keyboard.current;
+
+            bool isMouseIdle = mouse == null
+                || (!mouse.leftButton.isPressed && !mouse.leftButton.wasReleasedThisFrame);
+            bool isKeyboardIdle = keyboard == null
+                || (!keyboard.spaceKey.isPressed && !keyboard.spaceKey.wasReleasedThisFrame);
+
+            return isMouseIdle && isKeyboardIdle;
+        }
 
         /// <summary>Builds the aim direction from WASD and the arrow keys (both work at the same time).</summary>
         private static Vector2 ReadKeyboardAimAxis(Keyboard keyboard)
@@ -103,6 +128,12 @@ namespace EcoToss.Gameplay
             ApplyCursorState(isLocked: false);
         }
 
+        private void Update()
+        {
+            if (isWaitingForChargeRelease && AreChargeButtonsFullyReleased())
+                isWaitingForChargeRelease = false;
+        }
+
         #endregion
 
         #region Event Handlers
@@ -110,6 +141,10 @@ namespace EcoToss.Gameplay
         private void HandleGameStateChanged(GameState newState)
         {
             isInputAllowed = newState == GameState.Playing;
+
+            // Ignore the button that was used to close the menu (briefing, pause) until it is released.
+            if (isInputAllowed) isWaitingForChargeRelease = true;
+
             ApplyCursorState(isLocked: isInputAllowed && lockCursorWhilePlaying);
         }
 

@@ -132,6 +132,7 @@ GameObject:
   - component: {fileID: 200103}
   - component: {fileID: 200104}
   - component: {fileID: 200105}
+  - component: {fileID: 200106}
   m_Layer: 5
   m_Name: MainMenuCanvas
   m_TagString: Untagged
@@ -250,6 +251,18 @@ MonoBehaviour:
   settingsPanel: {fileID: 752418372}
   settingsBackButton: {fileID: 2011268727}
   gameplaySceneName: Gameplay
+--- !u!114 &200106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 200100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f60809d43ebf48229eac38762623920, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EcoToss.UI.UISpaceSubmitBinding
 --- !u!1 &200200
 GameObject:
   m_ObjectHideFlags: 0
