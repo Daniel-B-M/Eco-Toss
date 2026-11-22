@@ -7,12 +7,13 @@ namespace EcoToss.UI
 {
     /// <summary>
     /// Plays the UI hover and select sounds for the Button on the same GameObject.
-    /// Hover plays when the pointer enters; select plays on click (mouse or Enter, through onClick).
+    /// Hover plays when the pointer enters or when keyboard navigation (arrows) selects the button;
+    /// select plays on click (mouse or Enter, through onClick).
     /// Disabled buttons stay silent. The AudioManager is reached through AudioManager.Instance
     /// because it lives in another scene (DontDestroyOnLoad).
     /// </summary>
     [RequireComponent(typeof(Button))]
-    public class ButtonSoundEmitter : MonoBehaviour, IPointerEnterHandler
+    public class ButtonSoundEmitter : MonoBehaviour, IPointerEnterHandler, ISelectHandler
     {
         #region Private Fields
 
@@ -46,6 +47,19 @@ namespace EcoToss.UI
             if (targetButton.IsInteractable() && AudioManager.Instance != null)
                 AudioManager.Instance.PlayButtonHover();
         }
+
+
+
+public void OnSelect(BaseEventData eventData)
+        {
+            // Arrow navigation hands an AxisEventData to OnSelect. Selecting by code (panels on open)
+            // or with a mouse click sends a different type, so those cases stay silent.
+            bool selectedByKeyboardNavigation = eventData is AxisEventData;
+
+            if (selectedByKeyboardNavigation && targetButton.IsInteractable() && AudioManager.Instance != null)
+                AudioManager.Instance.PlayButtonHover();
+        }
+
 
         private void HandleButtonClicked()
         {
