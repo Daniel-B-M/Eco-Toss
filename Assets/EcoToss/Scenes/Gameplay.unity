@@ -2865,6 +2865,56 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 590708797}
   m_CullTransparentMesh: 1
+--- !u!1 &610718439
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 610718441}
+  - component: {fileID: 610718440}
+  m_Layer: 0
+  m_Name: BinVfxController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &610718440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 610718439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41a9de985e2d642ed809ce962a3cb8e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EcoToss.Feedback.BinVfxController
+  binTriggers:
+  - {fileID: 1706179408564871530}
+  - {fileID: 7489975579710206022}
+  - {fileID: 1582477077069174058}
+  correctSortEffectPrefab: {fileID: 2675267262734223087, guid: 0fbae9cbf75b94ac0bb99bd3787ddfe7, type: 3}
+  incorrectSortEffectPrefab: {fileID: 6873427966834164825, guid: c8f892533cd9049888d3cac331ef6c0e, type: 3}
+--- !u!4 &610718441
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 610718439}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &613370203
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18201,6 +18251,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5965019918761325223, guid: 6da2d83dfc6564be99e1f64dbab5794a, type: 3}
   m_PrefabInstance: {fileID: 1582477077069174056}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1582477077069174058 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8924793720452138172, guid: 6da2d83dfc6564be99e1f64dbab5794a, type: 3}
+  m_PrefabInstance: {fileID: 1582477077069174056}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 860311388c0c3478387fb595ef0097bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EcoToss.Gameplay.BinTrigger
 --- !u!1001 &1706179408564871528
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18271,6 +18332,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8325772509181174563, guid: 1c36010a9c69249e4b29c82b5e26c74d, type: 3}
   m_PrefabInstance: {fileID: 1706179408564871528}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1706179408564871530 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6528015373818582328, guid: 1c36010a9c69249e4b29c82b5e26c74d, type: 3}
+  m_PrefabInstance: {fileID: 1706179408564871528}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 860311388c0c3478387fb595ef0097bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EcoToss.Gameplay.BinTrigger
 --- !u!1001 &7489975579710206020
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18341,6 +18413,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6774279753247685323, guid: 46b2b01a34edf4fa9a8f6fff77a558eb, type: 3}
   m_PrefabInstance: {fileID: 7489975579710206020}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &7489975579710206022 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8579406846609640656, guid: 46b2b01a34edf4fa9a8f6fff77a558eb, type: 3}
+  m_PrefabInstance: {fileID: 7489975579710206020}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 860311388c0c3478387fb595ef0097bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EcoToss.Gameplay.BinTrigger
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -18361,3 +18444,4 @@ SceneRoots:
   - {fileID: 1775072221}
   - {fileID: 1077708083}
   - {fileID: 1132855572}
+  - {fileID: 610718441}
