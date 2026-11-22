@@ -4,7 +4,7 @@ using UnityEngine;
 namespace EcoToss.Gameplay
 {
     /// <summary>
-    /// Rotates the aim pivot with the mouse, clamping horizontal and vertical angles.
+    /// Rotates the aim pivot with the mouse or the keyboard (WASD / arrows), clamping horizontal and vertical angles.
     /// Reads input from ThrowInputReader (so it only moves while Playing)
     /// and resets to the initial angle every time a new waste is spawned.
     /// </summary>
@@ -17,6 +17,10 @@ namespace EcoToss.Gameplay
 
         [Header("Mouse Control")]
         [SerializeField] private float mouseSensitivity = 0.1f;
+
+        [Header("Keyboard Control")]
+        [Tooltip("How fast the aim turns while a WASD / arrow key is held, in degrees per second.")]
+        [SerializeField] private float keyboardAimSpeed = 60f;
 
         [Header("Aim Limits (degrees)")]
         [SerializeField] private float maxHorizontalAngle = 45f;
@@ -52,17 +56,21 @@ namespace EcoToss.Gameplay
 
         private void Update()
         {
-            Vector2 aimDelta = throwInputReader.AimDelta;
-            if (aimDelta == Vector2.zero) return;
+            Vector2 mouseAngleDelta = throwInputReader.AimDelta * mouseSensitivity;
+            Vector2 keyboardAngleDelta = throwInputReader.KeyboardAimAxis * (keyboardAimSpeed * Time.deltaTime);
+            Vector2 totalAngleDelta = mouseAngleDelta + keyboardAngleDelta;
 
-            horizontalAngle += aimDelta.x * mouseSensitivity;
-            verticalAngle += aimDelta.y * mouseSensitivity;
+            if (totalAngleDelta == Vector2.zero) return;
+
+            horizontalAngle += totalAngleDelta.x;
+            verticalAngle += totalAngleDelta.y;
 
             horizontalAngle = Mathf.Clamp(horizontalAngle, -maxHorizontalAngle, maxHorizontalAngle);
             verticalAngle = Mathf.Clamp(verticalAngle, minVerticalAngle, maxVerticalAngle);
 
             ApplyRotation();
         }
+
 
         private void OnDrawGizmos()
         {
